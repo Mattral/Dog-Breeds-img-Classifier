@@ -1,0 +1,31 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: The architecture classify both image 1 and 2 of dogs as "alsatian", which I provided correctly.
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: 3 out of 4 sample replacing with different images of flipped orientation, correctly classifies as I tries. However, I have doubts on Alex and Resnet architectures after overall evaluation for total matrix, I think we should try with more images in this case or retrain with inverted images.
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: Most of the times, they correctly classify Dog vs non Dog Images, However, consecutive runs have incorrect variation in case of "resnet" architecture of animal, which I saw in consecutive re-runs (just once). I hope I can have your advice on that matter in your review of my work, hoping you would read this.
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:Even after third try, VGG architecture is the best performing one, as you can see in this workspace results,( alex=80%,resnet=90%,VGG=93% ), in case you cant access here is the brief result of VGG
+""""
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :  40
+N Dog Images        :  30
+N Not-Dog Images    :  10
+ 
+pct_match: 87.5
+pct_correct_dogs: 100.0
+pct_correct_breed: 93.33333333333333
+pct_correct_notdogs: 100.0
+""""
