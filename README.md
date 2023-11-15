@@ -1,6 +1,6 @@
 # Dog-Breeds-img-Classifier
 
-Modularized code for Udacity Nanodegree Program.
+Modularized code for Udacity Nanodegree Program. First Accessment project.
 
 
 either run check_images.py file or
